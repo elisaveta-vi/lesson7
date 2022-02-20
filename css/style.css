@@ -1,0 +1,234 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,700,900&display=swap");
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+body {
+	font-family: Inter, sans-serif;
+	text-align: center;
+	background-color: rgba(128, 128, 128, 0.185);
+}
+h1 {
+	font-size: 70px;
+	font-weight: 900;
+	color: rgb(51, 51, 200);
+	margin-bottom: 40px;
+}
+
+.block {
+	/* width: 200px; */
+	/* height: 100px; */
+	border: 2px solid chartreuse;
+	color: #ffffff;
+	line-height: 3;
+	padding: 0 2px;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: darkblue;
+}
+.block-1 {
+	background-color: rgb(27, 158, 114);
+}
+.block-2 {
+	background-color: rgba(27, 158, 114, 0.507);
+}
+.block-3 {
+	background-color: #55c642;
+}
+.image-blocks {
+	margin-bottom: 50px;
+}
+.image-block {
+	width: 500px;
+	height: 500px;
+	display: inline-block;
+}
+.image {
+	background-image: url("../img/cat2.jpg");
+}
+.combo {
+	background-color: rgb(238, 179, 52);
+	background-image: url("../img/big.png");
+}
+.gradient {
+	background: rgb(118, 255, 26);
+	background: linear-gradient(
+		82deg,
+		rgba(118, 255, 26, 1) 0%,
+		rgba(236, 201, 20, 1) 18%,
+		rgba(230, 216, 13, 1) 36%,
+		rgba(105, 230, 13, 1) 59%,
+		rgba(13, 200, 230, 1) 75%,
+		rgba(230, 13, 203, 1) 86%
+	);
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align-last: left;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	outline: 4px dotted green;
+}
+.repeats {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+.repeat {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	border: 1px solid rgb(29, 46, 207);
+	background-image: url("../img/pattern.png");
+	background-color: #ffffff;
+}
+.no {
+	background-repeat: no-repeat;
+}
+.x {
+	background-repeat: repeat-x;
+}
+.y {
+	background-repeat: repeat-y;
+}
+.space {
+	background-repeat: space;
+}
+.round {
+	background-repeat: round;
+}
+.positions {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+.position {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	border: 2px solid red;
+	background: url("../img/cat3.jpg") no-repeat;
+	background-color: #ffffff;
+}
+.position1 {
+	background-position: 50%;
+}
+.position2 {
+	background-position: left;
+}
+.position3 {
+	background-position: top;
+}
+/* По вертикали -- проценты от высоты блока */
+.position4 {
+	background-position: 20px 30%;
+}
+.position5 {
+	background-position: 100% 100%;
+}
+.sizes {
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+.size {
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	border: 4px solid blue;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+}
+.size1 {
+	background-size: auto 400px;
+	background-image: url("../img/photo_2022-02-18_22-50-42.jpg");
+}
+.size2 {
+	background-size: contain;
+	background-image: url("../img/cat1.jpg");
+}
+.size3 {
+	background-size: contain;
+	background-image: url("../img/toy.jpg");
+}
+.size4 {
+	background-size: cover;
+	background-position: center;
+	background-image: url("../img/view.jpg");
+}
+.attachments {
+	margin-bottom: 50px;
+}
+.attachment {
+	margin-bottom: 30px;
+	background-image: url("../img/vew2.jpg");
+}
+
+.attachment1 {
+	min-height: 70px;
+	background-position: 50%;
+	background-attachment: scroll;
+}
+.attachment2 {
+	max-height: 800px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.attachment2 p {
+	font-size: 300px;
+	color: white;
+	line-height: 800px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.561);
+}
+.attachment3 {
+	background-attachment: local;
+	height: 300px;
+	max-width: 500px;
+	overflow: auto;
+	margin: 0 auto;
+	background-size: 500px;
+	background-repeat: no-repeat;
+}
+.many {
+	margin-bottom: 40px;
+}
+.several {
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 500px;
+	background-image: url("../img/view.jpg"), url("../img/view.jpg"), url("../img/lake.jpg"), url("../img/pattern.png");
+	background-repeat: no-repeat, no-repeat, no-repeat, round;
+	background-size: 400px, 500px, 300px, 200px;
+	background-position: 100% 100%, 40% 50%, 30px 40px, 0 0;
+}
+h4 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.universal {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background: rgb(100, 141, 189) url("../img/curl.png") 100% 100% / contain no-repeat scroll;
+	padding: 20px 10px;
+}
+
+.universal p {
+	text-align: left;
+	line-height: 1.5;
+}
+
+.button {
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	background-color: red;
+	color: #ffffff;
+	display: inline-block;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
